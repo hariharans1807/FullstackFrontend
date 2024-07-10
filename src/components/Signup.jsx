@@ -36,7 +36,7 @@ const Signup = () => {
             name: data.name,
             email: data.email,
           };
-          axiosPublic.post("/users", userInfor)
+          axiosPublic.post("https://fullstackbackend-txm4.onrender.com/users", userInfor)
             .then((response) => {
               // console.log(response);
               alert("Signin successful!");
@@ -61,7 +61,7 @@ const Signup = () => {
           email: result?.user?.email,
         };
         axiosPublic
-          .post("/users", userInfor)
+          .post("https://fullstackbackend-txm4.onrender.com/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");
@@ -133,7 +133,7 @@ const Signup = () => {
 
           <div className="text-center my-2">
             Have an account?
-            <Link to="/login">
+            <Link to="https://fullstackbackend-txm4.onrender.com/login">
               <button className="ml-2 underline">Login here</button>
             </Link>
           </div>
